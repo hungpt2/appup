@@ -1,0 +1,85 @@
+.appup-grid-item {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin:0.5rem 0.5rem;
+}
+.card-header, .card-content {
+    padding:10px 10px 0;
+}
+.card-header .btn {
+    padding:0;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border: none;
+}
+.dropdown-toggle {
+    background: none;
+    color: #000;
+    border: none;
+}
+.btn:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #666;
+}
+.btn:focus {
+    box-shadow:none;
+}
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+.show > .btn.dropdown-toggle{
+    color: #000;
+    background-color: transparent;
+}
+.dropdown {
+    float:right;
+}
+.no-padding {
+    padding:0;
+}
+.row {
+    margin:0;
+}
+.width-fit {
+    width: fit-content;
+}
+.margin-top-negative-18 {
+    margin-top: -18px;
+}
+.trigger-count {
+    border: 1px solid #ddd;
+    padding: 5px 10px 1px;
+}
+.dropdown-top { 
+    padding: 0;
+    margin-top: -12px;
+}
+.grid-buttons {
+display: none;
+}
+
+.appup-grid-item:hover {
+    background-color: #888;
+    position: relative;
+    .grid-buttons {
+        display: block;
+        position: absolute;
+        top: 50%;
+        border-radius: 20px;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .btn:hover {
+        color: #fff;
+    }
+}

@@ -1,0 +1,19 @@
+.image {
+  width: inherit;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.max-w-500 {
+  max-width: 500px;
+}
+
+.h-100-vh {
+  height: calc(100vh - 3rem) !important;
+}

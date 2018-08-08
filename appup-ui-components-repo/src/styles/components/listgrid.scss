@@ -1,0 +1,12 @@
+.listGrid-switch-icon
+{
+    padding: 18px 10px 4px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.listGrid-switch-icon.active
+{
+    background-color: lavender;
+    cursor: default;
+}

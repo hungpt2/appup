@@ -1,0 +1,225 @@
+{
+	"variables": [],
+	"info": {
+		"name": "appup_api_mocks",
+		"_postman_id": "80a136f2-45b6-89d8-af29-4507e21c43a9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"url": "http://localhost:3000/api/user",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single User",
+					"request": {
+						"url": "http://localhost:3000/api/user/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"url": "http://localhost:3000/api/user",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"5ae7f4c39f66f39ebc573e32\",\n    \"first_name\": \"Laverne\",\n    \"last_name\": \"Burris\",\n    \"isActive\": false,\n    \"picture\": \"http://placehold.it/32x32\",\n    \"age\": 24,\n    \"gender\": \"female\",\n    \"department\": \"ZERBINA\",\n    \"email\": \"laverneburris@zerbina.com\",\n    \"phone\": \"+1 (972) 480-3007\",\n    \"address\": \"634 Fair Street, Kenwood, Maryland, 1585\",\n    \"registered\": \"2016-01-05T08:21:53 -06:-30\"\n}"
+						},
+						"description": "If first_name=madan, the request is pass. Else request is failed."
+					},
+					"response": [
+						{
+							"id": "6afe2600-9766-47f1-86fd-5f7ba674d23d",
+							"name": "Create User",
+							"originalRequest": {
+								"url": "http://localhost:3000/api/user",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"5ae7f4c39f66f39ebc573e32\",\n    \"first_name\": \"madan\",\n    \"last_name\": \"Burris\",\n    \"isActive\": false,\n    \"picture\": \"http://placehold.it/32x32\",\n    \"age\": 24,\n    \"gender\": \"female\",\n    \"department\": \"ZERBINA\",\n    \"email\": \"laverneburris@zerbina.com\",\n    \"phone\": \"+1 (972) 480-3007\",\n    \"address\": \"634 Fair Street, Kenwood, Maryland, 1585\",\n    \"registered\": \"2016-01-05T08:21:53 -06:-30\"\n}"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"_postman_previewtype": "parsed",
+							"header": [],
+							"cookie": [],
+							"responseTime": 0,
+							"body": ""
+						},
+						{
+							"id": "f4c2d845-892c-48c0-9d3e-3f38293402c9",
+							"name": "Create User Fail",
+							"originalRequest": {
+								"url": "http://localhost:3000/api/user",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"5ae7f4c39f66f39ebc573e32\",\n    \"first_name\": \"Laraves\",\n    \"last_name\": \"Burris\",\n    \"isActive\": false,\n    \"picture\": \"http://placehold.it/32x32\",\n    \"age\": 24,\n    \"gender\": \"female\",\n    \"department\": \"ZERBINA\",\n    \"email\": \"laverneburris@zerbina.com\",\n    \"phone\": \"+1 (972) 480-3007\",\n    \"address\": \"634 Fair Street, Kenwood, Maryland, 1585\",\n    \"registered\": \"2016-01-05T08:21:53 -06:-30\"\n}"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"_postman_previewtype": "parsed",
+							"header": [],
+							"cookie": [],
+							"responseTime": 0,
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"url": "http://localhost:3000/api/user",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"5ae7f4c39f66f39ebc573e32\",\n    \"first_name\": \"Laverne\",\n    \"last_name\": \"Burris\",\n    \"isActive\": false,\n    \"picture\": \"http://placehold.it/32x32\",\n    \"age\": 24,\n    \"gender\": \"female\",\n    \"department\": \"ZERBINA\",\n    \"email\": \"laverneburris@zerbina.com\",\n    \"phone\": \"+1 (972) 480-3007\",\n    \"address\": \"634 Fair Street, Kenwood, Maryland, 1585\",\n    \"registered\": \"2016-01-05T08:21:53 -06:-30\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"url": "http://localhost:3000/api/user/10",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"5ae7f4c39f66f39ebc573e32\",\n    \"first_name\": \"Laverne\",\n    \"last_name\": \"Burris\",\n    \"isActive\": false,\n    \"picture\": \"http://placehold.it/32x32\",\n    \"age\": 24,\n    \"gender\": \"female\",\n    \"department\": \"ZERBINA\",\n    \"email\": \"laverneburris@zerbina.com\",\n    \"phone\": \"+1 (972) 480-3007\",\n    \"address\": \"634 Fair Street, Kenwood, Maryland, 1585\",\n    \"registered\": \"2016-01-05T08:21:53 -06:-30\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sample datatable",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/datatable?pageNo=0&pageSize=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"datatable"
+					],
+					"query": [
+						{
+							"key": "pageNo",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageSize",
+							"value": "100",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "sample dropdown",
+			"request": {
+				"url": "http://localhost:3000/dropdown",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,18 @@
+.appup-microapp {
+    width:150px;
+    float: left;
+    img {
+        border: 1px solid #ddd;
+        padding:10px;
+    }    
+}
+.category-name {
+    .microapp-settingicon {
+        visibility: hidden
+    }
+}
+.category-name:hover {
+    .microapp-settingicon {
+        visibility: visible
+    }
+}

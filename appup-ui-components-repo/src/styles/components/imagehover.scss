@@ -1,0 +1,41 @@
+/*
+Custom image hover component
+*/
+.appup-hover {
+    .component-hover {
+        position: relative;
+        border-radius: 20px;
+        background-color: #0F62A8;
+    }
+    .hover-image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .hover-text {
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        button {
+            color: #fff;
+            svg{ 
+                width: 12px;
+            }
+        }
+    }
+    .component-hover:hover .hover-image {
+         opacity: 0.1;         
+    }
+    .component-hover:hover .hover-text {
+        opacity: 1;
+    }
+}

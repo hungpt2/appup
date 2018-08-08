@@ -1,0 +1,34 @@
+/*
+Custom overrides for vue-multiselect component
+*/
+$fontColor: #212529;
+$backgroundColor: #dee2e6 transparent transparent;
+$errorColor: #f04124;
+
+.multiselect__tag {
+	color: $fontColor;
+	background: #dee2e6;
+}
+.multiselect__option--highlight {
+	color: $fontColor;
+	background: #dee2e6;
+	&:after {
+		color: $fontColor;
+		background: #dee2e6;
+	}
+}
+.multiselect__spinner {
+	&:after {
+		border-color: backgroundColor;
+	}
+}
+.multiselect__tag-icon {
+	&:hover {
+		background: #66696D;
+	}
+}
+.invalid {
+	.multiselect__tags {
+		border-color: $errorColor !important;
+	}
+}
